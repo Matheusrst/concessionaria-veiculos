@@ -3,21 +3,20 @@ import prisma from '../../lib/prisma';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
-    const { modeloId, ano, preco, especificacao } = req.body;
+    const { veiculoId, url, descricao } = req.body;
 
     try {
-      const novoVeiculo = await prisma.veiculo.create({
+      const novaImagem = await prisma.imagemVeiculo.create({
         data: {
-          modeloId,
-          ano,
-          preco,
-          especificacao,
+          veiculoId,
+          url,
+          descricao,
         },
       });
-      res.status(201).json(novoVeiculo);
+      res.status(201).json(novaImagem);
     } catch (error) {
-      console.error("Erro ao adicionar o veículo:", error);
-      res.status(500).json({ error: 'Erro ao adicionar o veículo.' });
+      console.error("Erro ao adicionar a imagem:", error);
+      res.status(500).json({ error: 'Erro ao adicionar a imagem.' });
     }
   } else {
     res.setHeader('Allow', ['POST']);
