@@ -1,0 +1,107 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFD700;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.profile-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  margin-left: -35px;
+  cursor: pointer;
+}
+
+/* Brand Carousel */
+.brand-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.brand-carousel img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Category Carousel */
+.category-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.category-item img {
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.category-item p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Top Selling Cars */
+.top-selling-cars {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.car-item img {
+  width: 150px;
+  height: 100px;
+}
+
+/* Recommended Cars */
+.recommended-cars {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.recommended-car-item img {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.recommended-car-item button {
+  background-color: #FFD700;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
